@@ -1,7 +1,7 @@
 # ATM
 
-## Qt5
+Qt5
 
-## Mockup in balsamiq
+## UI mockup in balsamiq
 
 https://phystech.mybalsamiq.com/projects/atmproject/grid
