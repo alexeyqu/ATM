@@ -10,3 +10,6 @@
         main.cpp \
     UI/atmscreen.cpp \
     UI/atmkeyboard.cpp
+
+DISTFILES += \
+    RESOURCES/BankLogo.png

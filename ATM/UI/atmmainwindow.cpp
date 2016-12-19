@@ -1,10 +1,10 @@
 #include "UI/atmmainwindow.h"
 
-ATMMainWindow::ATMMainWindow(QWidget *parent) : QMainWindow(parent)
+ATM_MainWindow::ATM_MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     setFixedSize(540, 600);
 
-    screen = new ATMScreen(this);
+    screen = new ATM_Screen(this);
     screen->setGeometry(60, 60, 400, 300);
 
     button1 = new QPushButton("1", this);
@@ -19,6 +19,6 @@ ATMMainWindow::ATMMainWindow(QWidget *parent) : QMainWindow(parent)
     button4 = new QPushButton("4", this);
     button4->setGeometry(465, 280, 50, 40);
 
-    keyboard = new ATMKeyboard(this);
+    keyboard = new ATM_Keyboard(this);
     keyboard->setGeometry(110, 390, 300, 160);
 }

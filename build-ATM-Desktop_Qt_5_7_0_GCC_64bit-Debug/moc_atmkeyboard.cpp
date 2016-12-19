@@ -18,25 +18,25 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_ATMKeyboard_t {
+struct qt_meta_stringdata_ATM_Keyboard_t {
     QByteArrayData data[1];
-    char stringdata0[12];
+    char stringdata0[13];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ATMKeyboard_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_ATM_Keyboard_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ATMKeyboard_t qt_meta_stringdata_ATMKeyboard = {
+static const qt_meta_stringdata_ATM_Keyboard_t qt_meta_stringdata_ATM_Keyboard = {
     {
-QT_MOC_LITERAL(0, 0, 11) // "ATMKeyboard"
+QT_MOC_LITERAL(0, 0, 12) // "ATM_Keyboard"
 
     },
-    "ATMKeyboard"
+    "ATM_Keyboard"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ATMKeyboard[] = {
+static const uint qt_meta_data_ATM_Keyboard[] = {
 
  // content:
        7,       // revision
@@ -52,7 +52,7 @@ static const uint qt_meta_data_ATMKeyboard[] = {
        0        // eod
 };
 
-void ATMKeyboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ATM_Keyboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -60,26 +60,26 @@ void ATMKeyboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-const QMetaObject ATMKeyboard::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_ATMKeyboard.data,
-      qt_meta_data_ATMKeyboard,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject ATM_Keyboard::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_ATM_Keyboard.data,
+      qt_meta_data_ATM_Keyboard,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *ATMKeyboard::metaObject() const
+const QMetaObject *ATM_Keyboard::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ATMKeyboard::qt_metacast(const char *_clname)
+void *ATM_Keyboard::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_ATMKeyboard.stringdata0))
-        return static_cast<void*>(const_cast< ATMKeyboard*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_ATM_Keyboard.stringdata0))
+        return static_cast<void*>(const_cast< ATM_Keyboard*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int ATMKeyboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ATM_Keyboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

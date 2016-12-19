@@ -4,11 +4,11 @@
 #include <QWidget>
 #include <QPushButton>
 
-class ATMKeyboard : public QWidget
+class ATM_Keyboard : public QWidget
 {
     Q_OBJECT
 public:
-    explicit ATMKeyboard(QWidget *parent = 0);
+    explicit ATM_Keyboard(QWidget *parent = 0);
 
 signals:
 

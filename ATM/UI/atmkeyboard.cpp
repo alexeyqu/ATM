@@ -1,6 +1,6 @@
 #include "atmkeyboard.h"
 
-ATMKeyboard::ATMKeyboard(QWidget *parent) : QWidget(parent)
+ATM_Keyboard::ATM_Keyboard(QWidget *parent) : QWidget(parent)
 {
     setFixedSize(300, 160);
 

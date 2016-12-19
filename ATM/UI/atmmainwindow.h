@@ -6,20 +6,20 @@
 #include "atmscreen.h"
 #include "atmkeyboard.h"
 
-class ATMMainWindow : public QMainWindow
+class ATM_MainWindow : public QMainWindow
 {
     Q_OBJECT
 public:
-    explicit ATMMainWindow(QWidget *parent = 0);
+    explicit ATM_MainWindow(QWidget *parent = 0);
 
 signals:
 
 public slots:
 
 private:
-    ATMScreen *screen;
+    ATM_Screen *screen;
 
-    ATMKeyboard *keyboard;
+    ATM_Keyboard *keyboard;
 
     QPushButton *button1;
     QPushButton *button2;

@@ -18,25 +18,25 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_ATMScreen_t {
+struct qt_meta_stringdata_ATM_Screen_t {
     QByteArrayData data[1];
-    char stringdata0[10];
+    char stringdata0[11];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ATMScreen_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_ATM_Screen_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ATMScreen_t qt_meta_stringdata_ATMScreen = {
+static const qt_meta_stringdata_ATM_Screen_t qt_meta_stringdata_ATM_Screen = {
     {
-QT_MOC_LITERAL(0, 0, 9) // "ATMScreen"
+QT_MOC_LITERAL(0, 0, 10) // "ATM_Screen"
 
     },
-    "ATMScreen"
+    "ATM_Screen"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ATMScreen[] = {
+static const uint qt_meta_data_ATM_Screen[] = {
 
  // content:
        7,       // revision
@@ -52,7 +52,7 @@ static const uint qt_meta_data_ATMScreen[] = {
        0        // eod
 };
 
-void ATMScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ATM_Screen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -60,26 +60,26 @@ void ATMScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     Q_UNUSED(_a);
 }
 
-const QMetaObject ATMScreen::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_ATMScreen.data,
-      qt_meta_data_ATMScreen,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject ATM_Screen::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_ATM_Screen.data,
+      qt_meta_data_ATM_Screen,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *ATMScreen::metaObject() const
+const QMetaObject *ATM_Screen::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ATMScreen::qt_metacast(const char *_clname)
+void *ATM_Screen::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_ATMScreen.stringdata0))
-        return static_cast<void*>(const_cast< ATMScreen*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_ATM_Screen.stringdata0))
+        return static_cast<void*>(const_cast< ATM_Screen*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int ATMScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ATM_Screen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

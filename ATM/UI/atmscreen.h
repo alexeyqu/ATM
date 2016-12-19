@@ -2,19 +2,22 @@
 #define ATMSCREEN_H
 
 #include <QWidget>
-#include <QPushButton>
+#include <QPainter>
+#include <QPixmap>
 
-class ATMScreen : public QWidget
+class ATM_Screen : public QWidget
 {
     Q_OBJECT
 public:
-    explicit ATMScreen(QWidget *parent = 0);
+    explicit ATM_Screen(QWidget *parent = 0);
+    void paintEvent(QPaintEvent *event);
 
 signals:
 
 public slots:
 
 private:
+    const QColor backgroundColor = QColor(102, 153, 102); // a really good color
 };
 
 #endif // ATMSCREEN_H

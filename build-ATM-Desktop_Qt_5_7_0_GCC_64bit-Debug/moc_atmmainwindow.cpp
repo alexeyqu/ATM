@@ -18,25 +18,25 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_ATMMainWindow_t {
+struct qt_meta_stringdata_ATM_MainWindow_t {
     QByteArrayData data[1];
-    char stringdata0[14];
+    char stringdata0[15];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ATMMainWindow_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_ATM_MainWindow_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ATMMainWindow_t qt_meta_stringdata_ATMMainWindow = {
+static const qt_meta_stringdata_ATM_MainWindow_t qt_meta_stringdata_ATM_MainWindow = {
     {
-QT_MOC_LITERAL(0, 0, 13) // "ATMMainWindow"
+QT_MOC_LITERAL(0, 0, 14) // "ATM_MainWindow"
 
     },
-    "ATMMainWindow"
+    "ATM_MainWindow"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ATMMainWindow[] = {
+static const uint qt_meta_data_ATM_MainWindow[] = {
 
  // content:
        7,       // revision
@@ -52,7 +52,7 @@ static const uint qt_meta_data_ATMMainWindow[] = {
        0        // eod
 };
 
-void ATMMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ATM_MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -60,26 +60,26 @@ void ATMMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObject ATMMainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_ATMMainWindow.data,
-      qt_meta_data_ATMMainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject ATM_MainWindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_ATM_MainWindow.data,
+      qt_meta_data_ATM_MainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *ATMMainWindow::metaObject() const
+const QMetaObject *ATM_MainWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ATMMainWindow::qt_metacast(const char *_clname)
+void *ATM_MainWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_ATMMainWindow.stringdata0))
-        return static_cast<void*>(const_cast< ATMMainWindow*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_ATM_MainWindow.stringdata0))
+        return static_cast<void*>(const_cast< ATM_MainWindow*>(this));
     return QMainWindow::qt_metacast(_clname);
 }
 
-int ATMMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ATM_MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
