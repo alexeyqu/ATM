@@ -1,3 +1,6 @@
+#ifndef CARD_HEADER
+#define CARD_HEADER
+
 #include <stdlib.h>
 #include <string>
 
@@ -19,3 +22,4 @@ public:
 	CARD_TYPE getCardType();
 	std::string getCardNumber();
 };
+#endif // !CARD_HEADER

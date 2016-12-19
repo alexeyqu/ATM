@@ -1,3 +1,5 @@
+#ifndef ATM_HEADER
+#define ATM_HEADER
 #include <stdlib.h>
 #include <string>
 #include "atmcardreader.h"
@@ -9,7 +11,7 @@
 
 class ATM
 {
-	std::string logs;
+	static std::string logs;
 	Communicator comm;
 	CardReader reader;
 	Keyboard keyboard;
@@ -21,4 +23,7 @@ public:
 	void onDataRecieved(unsigned char* inArray);
 	void onCardInserted();
 	void getLogs();
+	static void log(std::string text);
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef TRANSACTION_HEADER
+#define TRANSACTION_HEADER
+
 #include <stdlib.h>
 #include <string>
 #include <chrono>
@@ -9,31 +12,34 @@ class ATM_Transaction
 protected:
 	unsigned int id;
 	std::chrono::time_point<std::chrono::system_clock> date;
+	bool wasSuccesful = 0;
 	unsigned int generateId(std::chrono::time_point<std::chrono::system_clock> date);
 public:
-	virtual ~ATM_Transaction() = 0;
+	virtual ~ATM_Transaction() {};
+	bool wasOperationSuccessful() { return wasSuccesful; };
 };
 
-class PaymentTransaction : public ATM_Transaction
+class PayBillTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	PaymentTransaction(Account& from, Account& to, unsigned int sum);
-	~PaymentTransaction() {};
+	PayBillTransaction(Account &from, Account &to, unsigned int sum);
+	~PayBillTransaction() {};
 };
 
-class WithdrawlTransaction : public ATM_Transaction
+class WithdrawTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	WithdrawlTransaction(Account& from, unsigned int sum);
-	~WithdrawlTransaction() {};
+	WithdrawTransaction(Account &from, unsigned int sum);
+	~WithdrawTransaction() {};
 };
 
-class DepositTransaction : public ATM_Transaction
+class PayMobileTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	DepositTransaction(Account& to, unsigned int sum);
-	~DepositTransaction() {};
+	PayMobileTransaction(Account &from, Account &to, unsigned int sum);
+	~PayMobileTransaction() {};
 };
+#endif

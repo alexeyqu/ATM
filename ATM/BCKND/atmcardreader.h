@@ -1,7 +1,8 @@
+#pragma once
 #include <stdlib.h>
 #include <string>
 
-struct cardData
+struct card_data
 {
 	CARD_TYPE type;
 	std::string cardNumber;
@@ -10,6 +11,6 @@ struct cardData
 class CardReader
 {
 public:
-	cardData cardInserted();
+	struct card_data cardInserted();
 	void ejectCard();
 };

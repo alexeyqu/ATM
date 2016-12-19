@@ -1,6 +1,9 @@
+#ifndef ACCOUNT_HEADER
+#define ACCOUNT_HEADER
 #include <stdlib.h>
 #include <string>
 #include "atmcard.h"
+#include "atm.h"
 
 class Account
 {
@@ -14,5 +17,5 @@ public:
 	bool hasSum(unsigned int sum);
 	void addBalance(unsigned int sum);
 	void removeBalance(unsigned int sum);
-	
 };
+#endif
