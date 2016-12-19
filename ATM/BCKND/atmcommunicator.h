@@ -4,5 +4,5 @@
 
 class Communicator
 {
-	bool sendTransaction(ATM_Transacton t);
+	bool sendTransaction(ATM_Transaction t);
 };

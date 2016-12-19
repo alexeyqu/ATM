@@ -2,7 +2,11 @@
 
 unsigned int ATM_Transaction::generateId(std::chrono::time_point<std::chrono::system_clock> date)
 {
-	return (date / 2 + 173);
+	auto date_ms = std::chrono::time_point_cast<std::chrono::milliseconds>(date);
+	auto start = date_ms.time_since_epoch();
+	long count = start.count();
+
+	return ( count / 2 + 173);
 }
 
 PaymentTransaction::PaymentTransaction(Account& from, Account& to, unsigned int sum)

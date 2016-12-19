@@ -11,30 +11,29 @@ protected:
 	std::chrono::time_point<std::chrono::system_clock> date;
 	unsigned int generateId(std::chrono::time_point<std::chrono::system_clock> date);
 public:
-	Transaction() = 0;
-	~Transaction() = 0;
+	virtual ~ATM_Transaction() = 0;
 };
 
 class PaymentTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	PaymentTransaction(Account from, Account to, unsigned int sum);
-	~PaymentTransaction();
+	PaymentTransaction(Account& from, Account& to, unsigned int sum);
+	~PaymentTransaction() {};
 };
 
 class WithdrawlTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	WithdrawalTransaction(Account from, unsigned int sum);
-	~WithdrawalTransaction();
+	WithdrawlTransaction(Account& from, unsigned int sum);
+	~WithdrawlTransaction() {};
 };
 
 class DepositTransaction : public ATM_Transaction
 {
 	unsigned int amount;
 public:
-	DapositTransaction(Account to, unsigned int sum);
-	~DepositTransaction();
+	DepositTransaction(Account& to, unsigned int sum);
+	~DepositTransaction() {};
 };

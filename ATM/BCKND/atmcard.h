@@ -4,9 +4,9 @@
 
 enum CARD_TYPE
 {
-	"VIS-A-VI",
-	"MUST-A-CARD",
-	"Am Ex-Press"
+	VIS_A_VI,
+	MUST_A_CARD,
+	AmEx_Press
 };
 
 class Card
